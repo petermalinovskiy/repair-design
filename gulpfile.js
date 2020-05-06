@@ -7,23 +7,26 @@ var rename = require("gulp-rename");
 gulp.task('hello', function(done) {
   console.log('Привет, мир!');
   done( );
-});
+}); 
 
 // Static server
 gulp.task('browser-sync', function() {
   browserSync.init({
-      proxy: "yourlocal.dev"
+      server: {
+          baseDir: "./src"
+      }
   });
-  gulp.watch("./*.html").on('change', browserSync.reload);
+  gulp.watch("./src/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('min-CSS', function(done){
-  gulp.src('./css/*.css')
+  gulp.src('./src/css/*.css')
     .pipe(minCSS())
     .pipe(rename({
         suffix: '.min'
       }))
-    .pipe(gulp.dest('./minicss'));
+    .pipe(gulp.dest('./dist/css'));
     done( );
 });
+
 
