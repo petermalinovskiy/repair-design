@@ -7,19 +7,19 @@ function bs() {
   serveSass();
   browserSync.init({
       server: {
-          baseDir: "./src"
+          baseDir: "./src/"
       }
   });
-  watch("./*.html").on('change', browserSync.reload);
-  watch("./sass/**/*.sass", serveSass);
-  watch("./js/*.js").on('change', browserSync.reload);
+  watch("./src/*.html").on('change', browserSync.reload);
+  watch("./src/sass/**/*.sass", serveSass);
+  watch("./src/js/*.js").on('change', browserSync.reload);
 };
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return src("./sass/**/*.sass")
+  return src("./src/**/*.sass")
       .pipe(sass())
-      .pipe(dest("./css"))
+      .pipe(dest("./src/css/"))
       .pipe(browserSync.stream());
 };
 
