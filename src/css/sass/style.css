@@ -3,7 +3,7 @@
   src: url("/fonts/futura/FuturaBookC.woff") format("woff"), url("/fonts/futura/FuturaBookC.woff") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 @font-face {
   font-family: 'Futura Demi';
@@ -323,9 +323,15 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
-    color: #ffffff; }
+    color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.3s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -358,7 +364,10 @@ template {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
   color: #E3B873; }
@@ -375,6 +384,20 @@ template {
   background: #131313 url("/img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
+  .hero__content {
+    position: relative;
+    max-width: 670px; }
+  .hero__text {
+    font-size: 22px;
+    max-width: 500px; }
+  .hero__button {
+    margin-right: 20px; }
   .hero__instagram {
     position: absolute;
     top: 0;
@@ -394,23 +417,33 @@ template {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff; }
-  .hero__content {
-    max-width: 670px; }
-  .hero__text {
-    font-size: 22px;
-    max-width: 500px; }
-  .hero__button {
-    margin-right: 20px; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("/img/arrow-down.svg") no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
   .hero .instagram {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #131313; }
     .hero .instagram__link {
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
       text-decoration: none;
       color: #E3B873;
-      transform: rotate(90deg); }
+      transform: rotate(90deg);
+      line-height: 0.8; }
+      .hero .instagram__link::after {
+        content: '';
+        width: 50px;
+        height: 1px;
+        background-color: #E3B873;
+        margin-left: 8px; }
   .hero .title {
     margin: 0;
     font-family: 'Yeseva One', cursive;
