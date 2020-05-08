@@ -20,7 +20,9 @@ function bs() {
 function serveSass() {
   return src("./src/**/*.sass")
       .pipe(sass())
-      
+      .pipe(autoprefixer({
+        cascade: false
+    }))
       .pipe(dest("./src/css"))
       .pipe(browserSync.stream());
 };
