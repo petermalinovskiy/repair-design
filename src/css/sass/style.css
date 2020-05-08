@@ -356,6 +356,29 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  position: relative;
+  background: #131313 url("/img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh; }
+  .hero__instagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 91px;
+    height: 100%; }
+  .hero .instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313; }
+    .hero .instagram__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #E3B873;
+      transform: rotate(90deg); }
+  .hero__title {
+    margin: 0; }
+
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
