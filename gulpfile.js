@@ -12,14 +12,14 @@ function bs() {
       }
   });
   watch("./src/*.html").on('change', browserSync.reload);
-  watch("./src/**/*.sass", serveSass);
-  watch("./src/**/*.scss", serveSass);
+  watch("./src/sass/**/*.sass", serveSass);
+  watch("./src/sass/**/*.scss", serveSass);
   watch("./src/js/*.js").on('change', browserSync.reload);
 };
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return src("./src/**/*.sass", "./src/**/*.scss")
+  return src("./src/sass/**/*.sass")
       .pipe(sass())
       .pipe(autoprefixer({
         cascade: false
