@@ -328,14 +328,15 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
-      box-shadow: none; }
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2); }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff; }
+    .button--outline:hover {
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2); }
 
 .container {
   width: 85%;
@@ -380,7 +381,11 @@ body {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s; }
+  .logo:hover {
+    color: #ffffff; }
 
 .nav__item {
   color: #ffffff;
@@ -439,7 +444,10 @@ body {
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: color 0.3s; }
+    .hero__scroll-down:hover {
+      color: #E3B873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -460,13 +468,16 @@ body {
       text-decoration: none;
       color: #E3B873;
       transform: rotate(90deg);
-      line-height: 0.8; }
+      line-height: 0.8;
+      transition: color 0.3s; }
       .hero .instagram__link::after {
         content: '';
         width: 50px;
         height: 1px;
         background-color: #E3B873;
         margin-left: 8px; }
+      .hero .instagram__link:hover {
+        color: #ffffff; }
   .hero .title {
     margin: 0;
     font-family: 'Yeseva One', cursive;
