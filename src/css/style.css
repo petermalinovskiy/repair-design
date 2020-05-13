@@ -323,22 +323,18 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-family: 'Futura Demi', sans-serif;
-  font-size: 0.93rem; }
-  .button:hover {
-    cursor: pointer; }
+  font-size: 13px;
+  cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
     color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: 1px solid #E3B873;
+    box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.4);
     transition: box-shadow 0.3s; }
-    .button--primary:hover {
-      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2); }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff; }
-    .button--outline:hover {
-      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2); }
 
 .container {
   width: 87.34%;
@@ -406,8 +402,6 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s; }
-  .logo:hover {
-    color: #ffffff; }
 
 .nav__item {
   color: #ffffff;
@@ -416,14 +410,16 @@ img {
   text-transform: uppercase;
   margin-right: 37px;
   transition: color 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
+  .nav__item:nth-child(6) {
+    margin-right: 0; }
 
 .phone {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 44px; }
+  margin-right: 44px;
+  font-family: 'Futura Demi', sans-serif;
+  font-weight: normal; }
 
 .contacts__button {
   padding: 12px 20px; }
@@ -455,7 +451,7 @@ img {
     font-size: 1.57rem;
     font-weight: normal;
     line-height: 1.33;
-    max-width: 500px;
+    max-width: 35.714rem;
     margin-top: 0;
     margin-bottom: 3.2rem; }
   .hero__button {
@@ -485,8 +481,6 @@ img {
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s; }
-    .hero__scroll-down:hover {
-      color: #E3B873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -503,21 +497,22 @@ img {
     .hero .instagram__link {
       display: flex;
       align-items: center;
+      font-family: 'Futura Demi', sans-serif;
+      font-weight: normal;
       text-transform: uppercase;
       text-decoration: none;
       color: #E3B873;
       transform: rotate(90deg);
       line-height: 0.8;
-      font-size: 1.1rem;
-      transition: color 0.3s; }
+      font-size: 1rem;
+      transition: color 0.3s;
+      transition: background-color 0.3s; }
       .hero .instagram__link::after {
         content: '';
         width: 50px;
         height: 1px;
         background-color: #E3B873;
         margin-left: 8px; }
-      .hero .instagram__link:hover {
-        color: #ffffff; }
   .hero .title {
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
@@ -610,6 +605,32 @@ img {
   .nav__item {
     margin-right: 1rem; } }
 
+@media screen and (min-width: 992px) {
+  .logo:hover {
+    color: #ffffff; }
+  .nav__item:hover {
+    color: #E3B873; }
+  .contacts__phone:hover {
+    color: #ffffff; } }
+
+.button--primary:hover {
+  box-shadow: 0px 12px 22px rgba(255, 255, 255, 0.4); }
+
+.button--outline:hover {
+  box-shadow: 0px 12px 22px rgba(255, 255, 255, 0.4); }
+
+.hero__scroll-down:hover {
+  color: #E3B873; }
+
+.instagram__link:hover {
+  color: #ffffff; }
+  .instagram__link:hover::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #ffffff;
+    margin-left: 8px; }
+
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
@@ -637,17 +658,18 @@ img {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 28.25rem; }
+    max-width: 28.25rem;
+    margin: auto; }
   .hero__text {
     font-size: 1.5rem;
     margin-bottom: 2.67rem; }
   .hero__button {
     display: block;
-    min-width: 28.25rem;
+    width: 100%;
     margin-bottom: 2.17rem; }
   .hero .title {
     font-size: 1.92rem; } }
 
-@media screen and (max-height: 570px) {
+@media screen and (max-height: 640px) {
   .hero__scroll-down {
     display: none; } }

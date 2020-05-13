@@ -4,6 +4,41 @@
   .nav
     &__item
       margin-right: 1rem
+@media screen and ( min-width: 992px )
+  .logo
+    &:hover
+      color: $light
+  .nav
+   &__item
+      &:hover
+        color: $primary
+  .contacts
+    &__phone
+      &:hover
+        color: $light
+.button
+  &--primary
+    &:hover
+      box-shadow: 0px 12px 22px rgba($light, 0.4)
+  &--outline
+    &:hover
+      box-shadow: 0px 12px 22px rgba($light, 0.4)
+.hero
+  &__scroll-down
+    &:hover
+      color: $primary
+.instagram
+  &__link
+    &:hover 
+      color: $light
+      &::after
+        content: ''
+        width: 50px
+        height: 1px
+        background-color: $light
+        margin-left: 8px
+        
+
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -13,6 +48,7 @@
       display: none
     &__content
       margin-left: 0
+
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -36,16 +72,17 @@
       display: none
     &__content
       max-width: 28.25rem
+      margin: auto
     &__text
       font-size: 1.5rem
       margin-bottom: 2.67rem
     &__button
       display: block
-      min-width: 28.25rem
+      width: 100%
       margin-bottom: 2.17rem
     .title
       font-size: 1.92rem
-@media screen and ( max-height: 570px )    
+@media screen and ( max-height: 640px )    
   .hero
     &__scroll-down
       display: none
