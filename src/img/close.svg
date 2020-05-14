@@ -1,5 +1,12 @@
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 25.6668C20.4434 25.6668 25.6667 20.4435 25.6667 14.0002C25.6667 7.55684 20.4434 2.3335 14 2.3335C7.55672 2.3335 2.33337 7.55684 2.33337 14.0002C2.33337 20.4435 7.55672 25.6668 14 25.6668Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M17.5 10.5L10.5 17.5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M10.5 10.5L17.5 17.5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-linejoin:round;}
+</style>
+<path class="st0" d="M14,25.7c6.4,0,11.7-5.2,11.7-11.7c0-6.4-5.2-11.7-11.7-11.7C7.6,2.3,2.3,7.6,2.3,14C2.3,20.4,7.6,25.7,14,25.7
+	z"/>
+<path class="st0" d="M17.5,10.5l-7,7"/>
+<path class="st0" d="M10.5,10.5l7,7"/>
 </svg>

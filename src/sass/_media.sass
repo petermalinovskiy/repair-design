@@ -96,7 +96,38 @@
       margin-bottom: 2.17rem
     .title
       font-size: 1.92rem
+  .modal
+    &__title
+      width: 19.5rem
+    &__dialog
+      padding-left: 2rem
+      padding-right: 2rem
+    &__button
+      margin: auto
+    &__close
+      width: 1.8rem
+      height: 1.8rem    
+
+
 @media screen and ( max-height: 640px )    
   .hero
     &__scroll-down
       display: none
+
+@media screen and ( max-height: 576px )  
+  .modal
+    &__dialog
+      padding-top: 0.9rem
+      padding-bottom: 0.9rem
+    &__close
+      width: 1.8rem
+      height: 1.8rem
+    &__title
+      margin-bottom: 1rem
+    &__input
+      margin-bottom: 1rem
+    &__button
+      margin: auto
+      padding: 1rem 2.8rem
+    &__policy
+      margin-bottom: 1rem

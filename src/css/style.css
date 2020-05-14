@@ -776,8 +776,35 @@ img {
     width: 100%;
     margin-bottom: 2.17rem; }
   .hero .title {
-    font-size: 1.92rem; } }
+    font-size: 1.92rem; }
+  .modal__title {
+    width: 19.5rem; }
+  .modal__dialog {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .modal__button {
+    margin: auto; }
+  .modal__close {
+    width: 1.8rem;
+    height: 1.8rem; } }
 
 @media screen and (max-height: 640px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 576px) {
+  .modal__dialog {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem; }
+  .modal__close {
+    width: 1.8rem;
+    height: 1.8rem; }
+  .modal__title {
+    margin-bottom: 1rem; }
+  .modal__input {
+    margin-bottom: 1rem; }
+  .modal__button {
+    margin: auto;
+    padding: 1rem 2.8rem; }
+  .modal__policy {
+    margin-bottom: 1rem; } }
