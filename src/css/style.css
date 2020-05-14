@@ -605,6 +605,9 @@ img {
   line-height: 3.857rem;
   padding-left: 2.357rem; }
 
+.card__image--design {
+  background: rgba(0, 0, 0, 0.3); }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -739,6 +742,8 @@ img {
     margin-bottom: 4.29rem; }
   .card__text {
     margin-left: 0; }
+  .card__image--design {
+    background: none; }
   .hero .instagram {
     display: none; }
   .hero__content {
