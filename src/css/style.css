@@ -642,9 +642,10 @@ img {
   .modal__title {
     font-family: "Yeseva One", cursive;
     font-size: 1.357rem;
+    line-height: 1.9rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 2.2rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
@@ -663,7 +664,7 @@ img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     font-size: 1.285rem;
     color: #ffffff;
-    padding: 0.5rem 0; }
+    padding: 0.29rem 0 0.5rem 0; }
     .modal .input::-webkit-input-placeholder {
       color: #ffffff; }
     .modal .input::-moz-placeholder {
@@ -677,7 +678,7 @@ img {
   .modal__input {
     margin-bottom: 3.428rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: 0; }
   .modal .policy__checkbox {
     opacity: 0;
     visibility: hidden; }
