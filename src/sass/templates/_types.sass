@@ -1,14 +1,12 @@
 .types
   &__section-title
     margin-bottom: 2.214rem
-  &--pricetag
-    padding: 1.214rem 2.6rem
 .row
   display: flex
   align-items: flex-start
   justify-content: space-between
 .col
-  flex-basis: 32.5%
+  flex-basis: 31.72%
 .card
   &__text
     position: relative
@@ -36,12 +34,18 @@
     position: absolute
     left: 0
     bottom: -1.79rem
+    width: 16.286rem
+    height: 3.857rem
     font-size: 1.29rem
     font-family: "Yeseva One", cursive
     font-weight: normal
     text-transform: uppercase
     background-color: $primary
     color: $light
+    box-shadow: 5px 5px 10px rgba($primary, 0.3)
+    &--types
+      text-align: center
+      line-height: 3.857rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
