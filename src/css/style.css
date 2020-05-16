@@ -534,6 +534,9 @@ img {
 .col {
   flex-basis: 31.72%; }
 
+.card__image {
+  width: 100%; }
+
 .card__text {
   position: relative;
   margin: 0 auto;
@@ -575,15 +578,6 @@ img {
   .card__pricetag--types {
     text-align: center;
     line-height: 3.857rem; }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 4.29rem; }
-  .card__text {
-    margin-left: 0; } }
 
 .design {
   position: relative; }

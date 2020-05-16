@@ -11,4 +11,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   closeBtn.addEventListener('click', switchModal);
-});
+
+  //закрытие по клику вне модального окна
+  window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.classList.remove('modal--visible');
+    }
+}
+
+
+//закрытие по кнопке Escape
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+      modal.classList.remove('modal--visible');
+  }
+})
+
+  
+})
