@@ -346,13 +346,13 @@ template {
   align-items: flex-start;
   justify-content: space-between; }
 
-.col-30 {
+.col-32 {
   flex-basis: 31.72%; }
 
-.col-40 {
+.col-45 {
   width: 45%; }
 
-.col-60 {
+.col-55 {
   width: 55%; }
 
 *, *:before, *:after {
@@ -630,12 +630,13 @@ img {
   margin-bottom: 2.214rem; }
 
 .card__image {
+  display: block;
   width: 100%; }
 
 .card__text {
   position: relative;
   margin: 0 auto;
-  margin-top: -9.78rem;
+  margin-top: -9.6rem;
   padding: 1.79rem 2.14rem;
   background-color: #ffffff;
   max-width: 23.6rem;
@@ -675,20 +676,13 @@ img {
     line-height: 3.857rem; }
 
 .design {
+  background: linear-gradient(to bottom, #ffffff 49.5%, #131313 49.5%);
   position: relative; }
   .design__section-subtitle {
     max-width: 52.93rem;
     margin: 1.429rem auto 3.36rem; }
   .design__card {
     margin-bottom: 4.29rem; }
-  .design .dark-background {
-    position: absolute;
-    left: 0;
-    bottom: 4.29rem;
-    z-index: -1;
-    width: 100%;
-    height: 35rem;
-    background-color: #131313; }
 
 .card__text--design {
   margin-top: -9.82rem; }
@@ -854,16 +848,21 @@ img {
     padding-top: 3rem; }
   .col-40, .col-60 {
     width: 100%; }
-  .design__section-subtitle {
-    max-width: 28rem; }
-  .design .dark-background {
-    height: 178rem; }
+  .design {
+    background: #131313; }
+    .design__section-subtitle {
+      max-width: 28rem; }
+    .design .dark-background {
+      height: 178rem; }
   .design__heading, .design__section-subtitle {
     color: #ffffff; }
   .dark-layout {
     position: relative; }
     .dark-layout::before {
-      display: none; } }
+      display: none; }
+  .card__pricetag--design {
+    padding-left: 0;
+    text-align: center; } }
 
 @media screen and (max-width: 576px) {
   .contacts__button {
@@ -896,14 +895,13 @@ img {
     font-size: 1.25rem;
     line-height: 135.84%; }
   .section h2 {
-    font-size: 1.83rem;
-    font-weight: normal; }
+    font-size: 1.83rem; }
   .section .types__section-title {
     margin-bottom: 3.47rem; }
   .card {
     margin-bottom: 6.2rem; }
     .card__text {
-      margin-top: -11.7rem;
+      margin-top: -11.6rem;
       max-width: 22.4rem; }
     .card__pricetag {
       width: 15.8rem;
@@ -912,7 +910,7 @@ img {
     .card__list {
       line-height: 1.85rem; }
   .design__section-subtitle {
-    width: 25.5rem;
+    max-width: 25.5rem;
     margin: 1.7rem auto 3.25rem; }
   .modal__title {
     width: 19.5rem; }

@@ -64,6 +64,7 @@
   .col-40, .col-60
     width: 100%
   .design
+    background: $dark
     &__section-subtitle
       max-width: 28rem
     .dark-background
@@ -75,6 +76,11 @@
     position: relative
     &::before
       display: none
+  .card
+    &__pricetag
+      &--design  
+        padding-left: 0
+        text-align: center      
 
 
 
@@ -122,20 +128,17 @@
   .card
     margin-bottom: 6.2rem
     &__text
-      margin-top: -11.7rem
+      margin-top: -11.6rem
       max-width: 22.4rem
     &__pricetag
       width: 15.8rem
       height: 3.4rem
       bottom: -1.2rem
-      &--design  
-        padding-left: 0
-        text-align: center
     &__list
       line-height: 1.85rem
   .design
     &__section-subtitle
-      width: 25.5rem
+      max-width: 25.5rem
       margin: 1.7rem auto 3.25rem
   
   .modal
