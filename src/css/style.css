@@ -635,7 +635,7 @@ img {
 .card__text {
   position: relative;
   margin: 0 auto;
-  margin-top: -9.3rem;
+  margin-top: -9.78rem;
   padding: 1.79rem 2.14rem;
   background-color: #ffffff;
   max-width: 23.6rem;
@@ -660,7 +660,7 @@ img {
 .card__pricetag {
   position: absolute;
   left: 0;
-  bottom: -1.79rem;
+  bottom: -2.2rem;
   width: 16.286rem;
   height: 3.857rem;
   font-size: 1.29rem;
@@ -690,12 +690,24 @@ img {
     height: 35rem;
     background-color: #131313; }
 
+.card__text--design {
+  margin-top: -9.82rem; }
+
 .card__pricetag--design {
   line-height: 3.857rem;
-  padding-left: 2.357rem; }
+  padding-left: 2.357rem;
+  bottom: -2.08rem; }
 
-.card__image--design {
-  background: rgba(0, 0, 0, 0.3); }
+.card .dark-layout {
+  position: relative; }
+  .card .dark-layout::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 19, 19, 0.3); }
 
 .modal {
   opacity: 0;
@@ -846,10 +858,12 @@ img {
     max-width: 28rem; }
   .design .dark-background {
     height: 178rem; }
-  .section-title {
+  .design__heading, .design__section-subtitle {
     color: #ffffff; }
-  .section-subtitle {
-    color: #ffffff; } }
+  .dark-layout {
+    position: relative; }
+    .dark-layout::before {
+      display: none; } }
 
 @media screen and (max-width: 576px) {
   .contacts__button {
@@ -876,6 +890,30 @@ img {
     margin-bottom: 2.17rem; }
   .hero .title {
     font-size: 1.92rem; }
+  .section-title__heading {
+    margin-bottom: 1.1rem; }
+  .section-subtitle {
+    font-size: 1.25rem;
+    line-height: 135.84%; }
+  .section h2 {
+    font-size: 1.83rem;
+    font-weight: normal; }
+  .section .types__section-title {
+    margin-bottom: 3.47rem; }
+  .card {
+    margin-bottom: 6.2rem; }
+    .card__text {
+      margin-top: -11.7rem;
+      max-width: 22.4rem; }
+    .card__pricetag {
+      width: 15.8rem;
+      height: 3.4rem;
+      bottom: -1.2rem; }
+    .card__list {
+      line-height: 1.85rem; }
+  .design__section-subtitle {
+    width: 25.5rem;
+    margin: 1.7rem auto 3.25rem; }
   .modal__title {
     width: 19.5rem; }
   .modal__dialog {

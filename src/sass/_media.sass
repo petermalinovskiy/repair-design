@@ -68,11 +68,13 @@
       max-width: 28rem
     .dark-background
       height: 178rem
-  .section
-    &-title
+  .design
+    &__heading, &__section-subtitle
       color: $light
-    &-subtitle
-      color: $light
+  .dark-layout
+    position: relative
+    &::before
+      display: none
 
 
 
@@ -103,6 +105,39 @@
       margin-bottom: 2.17rem
     .title
       font-size: 1.92rem
+  .section
+    &-title
+      &__heading
+        margin-bottom: 1.1rem
+    &-subtitle
+      font-size: 1.25rem
+      line-height: 135.84%
+    h2
+      font-size: 1.83rem
+    .types
+      &__section
+        &-title
+          margin-bottom: 3.47rem
+
+  .card
+    margin-bottom: 6.2rem
+    &__text
+      margin-top: -11.7rem
+      max-width: 22.4rem
+    &__pricetag
+      width: 15.8rem
+      height: 3.4rem
+      bottom: -1.2rem
+      &--design  
+        padding-left: 0
+        text-align: center
+    &__list
+      line-height: 1.85rem
+  .design
+    &__section-subtitle
+      width: 25.5rem
+      margin: 1.7rem auto 3.25rem
+  
   .modal
     &__title
       width: 19.5rem
@@ -114,6 +149,7 @@
     &__close
       width: 1.8rem
       height: 1.8rem    
+      
 
 
 @media screen and ( max-height: 640px )    

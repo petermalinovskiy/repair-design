@@ -14,10 +14,21 @@
     height: 35rem
     background-color: $dark
 .card
+  &__text
+    &--design
+      margin-top: -9.82rem
   &__pricetag
     &--design
       line-height: 3.857rem    
       padding-left: 2.357rem
-  &__image
-    &--design
-      background: rgba(0, 0, 0, 0.3)
+      bottom: -2.08rem
+  .dark-layout
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: rgba($dark, 0.3)
