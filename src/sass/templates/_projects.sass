@@ -1,35 +1,46 @@
+#section-title__heading--primary
+  color: $primary
+  font-size: 1.929rem
+  font-weight: normal
 .projects
   padding-top: 9.12rem
 .row
   &--projects
     justify-content: space-between
-.swiper
+.swiper    
+  &-wrapper--photo
+    padding-top: 1.8rem
+    img
+      width: 47.857rem
+      height: 34.428rem
+      object-fit: cover
   &-wrapper
     margin-bottom: 5rem
   &-slide
     display: flex
     justify-content: flex-start
     flex-wrap: wrap
+    margin-bottom: 0.5rem
     &__text
       flex-basis: 35%
-      margin-bottom: 2rem  
+      margin-bottom: 1.7rem  
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
       font-family: 'Yeseva One', cursive
+      font-weight: normal
       text-transform: uppercase
       color: $primary
       margin-bottom: 0.64rem
-    &__vlue
-      margin-bottom: 2.5rem
+ 
 
   &-pagination
     &-bullets
       width: auto
     &-bullet
-      background-color: rgba($light, 0.3)
+      background: rgba($light, 0.3)
       &-active
-        background-color: $light
+        background: $light
   &-button
     &-prev, &-next
       bottom: 0
