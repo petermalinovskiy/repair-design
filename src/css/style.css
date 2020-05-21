@@ -583,7 +583,8 @@ img {
 #section-title__heading--primary {
   color: #E3B873;
   font-size: 1.929rem;
-  font-weight: normal; }
+  font-weight: normal;
+  letter-spacing: -0.07em; }
 
 .projects {
   padding-top: 9.12rem; }
