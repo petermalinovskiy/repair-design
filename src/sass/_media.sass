@@ -4,6 +4,10 @@
   .nav
     &__item
       margin-right: 1rem
+  .swiper
+    &-slide
+      &__text
+        flex-basis: 40%
 @media screen and ( min-width: 992px )
   .logo
     &:hover
@@ -88,9 +92,13 @@
   .swiper    
     &-wrapper
       &--text
-        width: 40rem
+        flex-basis: 35%
+      &--photo
+        padding-top: 1.8rem
   .section
     &-title
+      font-size: 1.16rem
+      line-height: 158.48%
       &__word
         &::after
           display: none
@@ -138,7 +146,8 @@
           margin-bottom: 1.8rem
       &__text
         max-width: 26.5rem
-        line-height: 1.9rem
+        line-height: 150%
+        margin-bottom: 1.65rem
     &-subtitle
       font-size: 1.25rem
       line-height: 135.84%
@@ -155,7 +164,11 @@
     &-slide
       &__text
         flex-basis: 50%
-        margin-bottom: 2rem  
+        margin-bottom: 1rem 
+      &__heading
+        margin-bottom: 0.75rem
+      &__value
+        line-height: 1.6rem 
     &-wrapper--photo
       padding-top: 1.8rem
       img
@@ -163,7 +176,7 @@
         height: 100%
         object-fit: cover
     &-wrapper
-      margin-bottom: 2.5rem
+      margin-bottom: 3rem
     &-container
       margin-bottom: 1rem
 

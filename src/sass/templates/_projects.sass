@@ -9,21 +9,20 @@
     justify-content: space-between
 .swiper    
   &-wrapper--photo
-    padding-top: 1.8rem
     img
       width: 47.857rem
       height: 34.428rem
       object-fit: cover
   &-wrapper
-    margin-bottom: 5rem
+    margin-bottom: 5.35rem
   &-slide
     display: flex
     justify-content: flex-start
     flex-wrap: wrap
     margin-bottom: 0.5rem
     &__text
-      flex-basis: 35%
-      margin-bottom: 1.7rem  
+      flex-basis: 34%
+      margin-bottom: 1.25rem  
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
@@ -31,14 +30,17 @@
       font-weight: normal
       text-transform: uppercase
       color: $primary
-      margin-bottom: 0.64rem
+      margin-bottom: 0.5rem
+    &__value
+      font-size: 1.07rem
+      line-height: 1.43rem
  
 
   &-pagination
     &-bullets
       width: auto
     &-bullet
-      background: rgba($light, 0.3)
+      background: $light
       &-active
         background: $light
   &-button
