@@ -49,6 +49,8 @@
         
 
 @media screen and ( max-width: 992px )
+  *
+    animation: none
   .nav
     display: none
   .row
@@ -148,7 +150,7 @@
       &__heading
         margin-bottom: 1.1rem
         &--primary    
-          margin-bottom: 1.8rem
+          margin-bottom: 1.8rem          
         &--light 
           margin-bottom: 1.5rem
       &__text
@@ -160,6 +162,8 @@
       line-height: 135.84%
     h2
       font-size: 1.83rem
+  #section-title__heading--primary
+    letter-spacing: -0.095em
 
   .control    
     margin-top: -2px
@@ -192,6 +196,7 @@
       margin-bottom: 5rem
       &-label 
         justify-content: flex-start
+        font-size: 1.33rem
     &__button
       order: 5
       padding: 1.5rem 4.2rem

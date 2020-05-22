@@ -87,6 +87,7 @@ $( document ).ready(function() {
         maxlength: 15
       }, 
       userPhone: "required",
+      policyCheckbox: "required",
       // правило-объект
       userEmail: {
         required: true,
@@ -100,6 +101,7 @@ $( document ).ready(function() {
         maxlength: "Имя не длинее пятнатцати букв"
       },
       userPhone: "Заполните поле",
+      policyCheckbox: "Поставьте галочку",
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email в формате name@domain.com"
