@@ -41,6 +41,11 @@
           height: 1px
           background-color: $light
           margin-left: 1rem
+  .footer
+    &__button
+      &:hover
+        box-shadow: 0px 12px 22px rgba($light, 0.4)
+
         
 
 @media screen and ( max-width: 992px )
@@ -238,6 +243,39 @@
     &__section-subtitle
       max-width: 25.5rem
       margin: 1.7rem auto 3.25rem
+
+  .footer
+    background: $dark  
+    &__wrap
+      background-color: $dark
+      padding: 0
+      margin-top: 0
+    &__title
+      font-size: 1.67rem
+      margin-bottom: 4.35rem
+    &__input-group  
+       flex-basis: 100% 
+       margin-bottom: 5.2rem
+       &--full-width
+        margin-bottom: 0.6rem
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem
+    &__policy
+      margin-bottom: 5.6rem
+    &__button
+      width: 100%
+      padding: 1.4rem auto
+      box-shadow: 0px 10px 20px rgba($primary, 0.1)
+    &__menu
+      display: none
+  .policy
+    &__label
+      &--center
+        justify-content: flex-start
+  
+  
 
       
   
