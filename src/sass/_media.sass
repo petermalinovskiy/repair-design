@@ -144,6 +144,8 @@
         margin-bottom: 1.1rem
         &--primary    
           margin-bottom: 1.8rem
+        &--light 
+          margin-bottom: 1.5rem
       &__text
         max-width: 26.5rem
         line-height: 150%
@@ -153,12 +155,53 @@
       line-height: 135.84%
     h2
       font-size: 1.83rem
-    &__
-      
-    .types
-      &__section
-        &-title
-          margin-bottom: 3.47rem
+
+  .control    
+    margin-top: -2px
+    background: linear-gradient(to top, $light 14%, $dark 14%)
+    color: $light
+    &__section-title
+      margin-bottom: 3.214rem
+    &__video
+      min-height: 17.5rem
+      margin-bottom: 2.4rem
+    &__text
+      max-width: 28rem
+      font-size: 1.16rem
+      line-height: 174%
+      margin-bottom: 2.6rem
+      &::before
+        margin-bottom: 1.1rem
+    &__form
+      flex-direction: column
+    &__label
+      color: rgba($light, 0.5)
+      margin-bottom: 2px
+    &__input
+      font-size: 1.5rem
+      margin-bottom: 5.1rem
+      &::placeholder
+        color: $light
+    &__policy
+      margin-top: -4rem
+      margin-bottom: 5rem
+      &-label 
+        justify-content: flex-start
+    &__button
+      order: 5
+      padding: 1.5rem 4.2rem
+      font-size: 1.25rem
+      border-radius: 0
+  .video
+    &__play
+      width: 18%
+      height: 18%
+
+
+  .types
+    &__section
+      &-title
+        margin-bottom: 3.47rem
         
   .swiper
     &-slide
