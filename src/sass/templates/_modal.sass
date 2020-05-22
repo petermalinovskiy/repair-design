@@ -51,9 +51,12 @@
     padding: 1.357rem 3.214rem
     border-radius: 0
   &__input
-    margin-bottom: 3.428rem
-    &:last-of-type
-      margin-bottom: 0
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.428rem
+      &:last-of-type
+        margin-bottom: 0
 .input
   background-color: transparent
   border: none
@@ -95,6 +98,12 @@
       margin-right: 0.64rem
     &--center
       justify-content: center
+label
+  &.invalid
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato
 
 
 

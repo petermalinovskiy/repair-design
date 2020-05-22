@@ -899,9 +899,11 @@ img {
     align-self: flex-end;
     padding: 1.357rem 3.214rem;
     border-radius: 0; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: 0; }
 
 .input {
@@ -961,6 +963,12 @@ img {
     margin-right: 0.64rem; }
   .policy__label--center {
     justify-content: center; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 @media screen and (max-width: 1200px) {
   html {

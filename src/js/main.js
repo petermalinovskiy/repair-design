@@ -42,6 +42,18 @@ $( document ).ready(function() {
     modal.toggleClass('modal--visible')
   })
 
+  $(document).keydown(function (event) {
+    if (event.keyCode === 27) {
+        $(modal).removeClass('modal--visible');
+    }
+  });
+
+  $(document).click(function (event) {
+      if ($(event.target).is(modal)) {
+          $(modal).removeClass('modal--visible');
+      }
+  });
+
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     pagination: {
@@ -62,5 +74,41 @@ $( document ).ready(function() {
   bullets.css('left', prev.width() + 30)
 
   new WOW().init();
+
+  //валидация формы
+
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      }, 
+      userPhone: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче дву букв",
+        maxlength: "Имя не длинее пятнатцати букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email в формате name@domain.com"
+      }
+    }
+  });
+
+  // Маска для телефона
+
+  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });
