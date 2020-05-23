@@ -808,7 +808,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -19rem;
-    margin-bottom: 3.714rem;
+    margin-bottom: 3.514rem;
     padding: 2.5rem; }
   .footer__title {
     font-family: 'Yeseva One', cursive;
@@ -847,6 +847,36 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 3.42rem 0; }
+  .footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  .footer__map {
+    max-width: 66.07rem;
+    margin-bottom: 4.64rem; }
+  .footer__adress-text {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #E3B873;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    max-width: 38rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.6rem; }
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.07rem; }
+  .footer__mail-icon {
+    margin-right: 1.07rem; }
+  .footer__map {
+    margin: auto;
+    width: 66.07rem;
+    height: 33.214rem;
+    margin-bottom: 4.714rem; }
 
 .modal {
   opacity: 0;
@@ -1206,8 +1236,23 @@ input.invalid {
       margin-bottom: 5.6rem; }
     .footer__button {
       width: 100%;
-      padding: 1.4rem auto;
-      box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1); }
+      padding: 1.3rem 4.2rem;
+      box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+      margin-bottom: 0.5rem; }
+    .footer__contacts {
+      flex-direction: column-reverse; }
+      .footer__contacts img {
+        min-width: 3.5rem;
+        min-height: 3.5rem; }
+    .footer__adress-text {
+      font-size: 1.5rem;
+      line-height: 145%;
+      max-width: 26rem;
+      margin-bottom: 1.5rem; }
+    .footer__map {
+      max-width: 100%;
+      max-height: 21rem;
+      margin-bottom: 3.35rem; }
     .footer__menu {
       display: none; }
   .policy__label--center {
