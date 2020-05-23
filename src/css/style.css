@@ -997,7 +997,7 @@ img {
   .policy__label--center {
     justify-content: center; }
 
-label.invalid {
+.invalid {
   color: tomato; }
 
 input.invalid {
@@ -1086,7 +1086,9 @@ input.invalid {
     .section-title__word::after {
       display: none; }
     .section-title__heading--primary {
-      margin-bottom: 1.8rem; } }
+      margin-bottom: 1.8rem; }
+  .footer__map {
+    max-width: 90%; } }
 
 @media screen and (max-width: 576px) {
   .contacts__button {

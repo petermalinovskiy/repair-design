@@ -75,10 +75,11 @@ $( document ).ready(function() {
 
   new WOW().init();
 
-  //валидация формы
+  //валидация формы модальное окно
 
   $('.modal__form').validate({
-    errorClass: "invalid",
+    errorClass: "invalid",        
+    errorElement: 'div',
     rules: {
       // строчное правило
       userName: {
@@ -86,7 +87,12 @@ $( document ).ready(function() {
         minlength: 2,
         maxlength: 15
       }, 
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 11,
+        maxlength: 11
+      }, 
+      userQuestion: "required",
       policyCheckbox: "required",
       // правило-объект
       userEmail: {
@@ -100,7 +106,12 @@ $( document ).ready(function() {
         minlength: "Имя не короче дву букв",
         maxlength: "Имя не длинее пятнатцати букв"
       },
-      userPhone: "Заполните поле",
+      userPhone: {        
+      required: "Заполните поле",
+      minlength: "Введите корректный номер телефона",
+      maxlength: "Введите корректный номер телефона"
+    },
+      userQuestion: "Поставьте галочку",
       policyCheckbox: "Поставьте галочку",
       userEmail: {
         required: "Заполните поле",
@@ -109,8 +120,43 @@ $( document ).ready(function() {
     }
   });
 
+
+    //валидация формы контроль
+    $('.control__form').validate({
+      errorClass: "invalid",        
+      errorElement: 'div',
+      rules: {
+        // строчное правило
+        controlUserName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        }, 
+        controlUserPhone: {
+          required: true,
+          minlength: 11,
+          maxlength: 11
+        }
+      }, // сообщения
+      messages: {
+        controlUserName: {
+          required: "Заполните поле",
+          minlength: "Имя не короче дву букв",
+          maxlength: "Имя не длинее пятнатцати букв"
+        },
+        controlUserPhone: {        
+        required: "Заполните поле",
+        minlength: "Введите корректный номер телефона",
+        maxlength: "Введите корректный номер телефона"
+      },
+        controlPolicyCheckbox: "Поставьте галочку"
+      }
+    });  
+
+
+
   // Маска для телефона
 
-  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7 (000) 000-00-00');
 
 });
