@@ -77,7 +77,7 @@ $( document ).ready(function() {
 
   //валидация формы модальное окно
 
-  $('.modal__form').validate({
+  $('form').validate({
     errorClass: "invalid",        
     errorElement: 'div',
     rules: {
@@ -121,37 +121,7 @@ $( document ).ready(function() {
   });
 
 
-    //валидация формы контроль
-    $('.control__form').validate({
-      errorClass: "invalid",        
-      errorElement: 'div',
-      rules: {
-        // строчное правило
-        controlUserName: {
-          required: true,
-          minlength: 2,
-          maxlength: 15
-        }, 
-        controlUserPhone: {
-          required: true,
-          minlength: 11,
-          maxlength: 11
-        }
-      }, // сообщения
-      messages: {
-        controlUserName: {
-          required: "Заполните поле",
-          minlength: "Имя не короче дву букв",
-          maxlength: "Имя не длинее пятнатцати букв"
-        },
-        controlUserPhone: {        
-        required: "Заполните поле",
-        minlength: "Введите корректный номер телефона",
-        maxlength: "Введите корректный номер телефона"
-      },
-        controlPolicyCheckbox: "Поставьте галочку"
-      }
-    });  
+  
 
 
 
