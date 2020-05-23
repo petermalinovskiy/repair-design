@@ -708,6 +708,21 @@ img {
 .control__label {
   margin-bottom: -2px; }
 
+.control__input::-webkit-input-placeholder {
+  color: #131313; }
+
+.control__input::-moz-placeholder {
+  color: #131313; }
+
+.control__input:-ms-input-placeholder {
+  color: #131313; }
+
+.control__input::-ms-input-placeholder {
+  color: #131313; }
+
+.control__input::placeholder {
+  color: #131313; }
+
 .control__button {
   font-size: 1.07rem;
   padding: 1.1rem 4.2rem; }
@@ -718,6 +733,8 @@ img {
   .control__policy-label {
     justify-content: center;
     font-size: 1.143rem; }
+  .control__policy .invalid {
+    text-align: center; }
 
 .video__play {
   position: relative;
@@ -838,6 +855,8 @@ img {
   .footer__policy {
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
+    .footer__policy .invalid {
+      text-align: center; }
   .footer__button {
     margin: auto;
     font-size: 1.07rem;
@@ -934,16 +953,16 @@ img {
     display: flex;
     flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input-group:last-of-type {
+    .modal__input-group--last {
       margin-bottom: 0; }
 
 .input {
   background-color: transparent;
   border: none;
   font-size: 1.285rem;
-  color: #ffffff;
   padding: 0.29rem 0 0.5rem 0; }
   .input--light {
+    color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
     .input--light::-webkit-input-placeholder {
       color: #ffffff; }
@@ -956,6 +975,7 @@ img {
     .input--light::placeholder {
       color: #ffffff; }
   .input--dark {
+    color: #131313;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
     .input--dark::-webkit-input-placeholder {
       color: #131313; }
@@ -1142,14 +1162,14 @@ input.invalid {
       margin-bottom: 3.214rem; }
     .control__video {
       min-height: 17.5rem;
-      margin-bottom: 2.4rem; }
+      margin-bottom: 1.9rem; }
     .control__text {
       max-width: 28rem;
       font-size: 1.16rem;
       line-height: 174%;
-      margin-bottom: 2.6rem; }
+      margin-bottom: 2.4rem; }
       .control__text::before {
-        margin-bottom: 1.1rem; }
+        margin-bottom: 1.25rem; }
     .control__form {
       flex-direction: column; }
     .control__label {
@@ -1169,19 +1189,19 @@ input.invalid {
       .control__input::placeholder {
         color: #ffffff; }
     .control__policy {
-      margin-top: -4rem;
-      margin-bottom: 5rem; }
+      margin-top: -4.2rem;
+      margin-bottom: 5.1rem; }
       .control__policy-label {
         justify-content: flex-start;
         font-size: 1.33rem; }
     .control__button {
       order: 5;
-      padding: 1.5rem 4.2rem;
+      padding: 1.38rem 4.2rem;
       font-size: 1.25rem;
       border-radius: 0; }
   .video__play {
-    width: 18%;
-    height: 18%; }
+    width: 11%;
+    height: 11%; }
   .types__section-title {
     margin-bottom: 3.47rem; }
   .swiper-slide__text {

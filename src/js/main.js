@@ -77,47 +77,61 @@ $( document ).ready(function() {
 
   //валидация формы модальное окно
 
-  $('form').validate({
-    errorClass: "invalid",        
-    errorElement: 'div',
-    rules: {
-      // строчное правило
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      }, 
-      userPhone: {
-        required: true,
-        minlength: 11,
-        maxlength: 11
-      }, 
-      userQuestion: "required",
-      policyCheckbox: "required",
-      // правило-объект
-      userEmail: {
-        required: true,
-        email: true
-      }
-    }, // сообщения
-    messages: {
-      userName: {
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",        
+      errorElement: 'div',
+      rules: {
+        // строчное правило
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        }, 
+        userPhone: {
+          required: true,
+          minlength: 18
+        }, 
+        userQuestion: "required",
+        policyCheckbox: "required",
+        // правило-объект
+        userEmail: {
+          required: true,
+          email: true
+        }
+      }, // сообщения
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя должно быть не короче 2 букв",
+          maxlength: "Имя должно быть не длинее 15 букв"
+        },
+        userPhone: {        
         required: "Заполните поле",
-        minlength: "Имя не короче дву букв",
-        maxlength: "Имя не длинее пятнатцати букв"
+        minlength: "Введите корректный номер телефона"
+        },
+        userQuestion: "Заполните поле",
+        policyCheckbox: "Согласитесь с обработкой данных",
+        userEmail: {
+          required: "Заполните поле",
+          email: "Введите корректный email в формате name@domain.com"
+        }
       },
-      userPhone: {        
-      required: "Заполните поле",
-      minlength: "Введите корректный номер телефона",
-      maxlength: "Введите корректный номер телефона"
-    },
-      userQuestion: "Поставьте галочку",
-      policyCheckbox: "Поставьте галочку",
-      userEmail: {
-        required: "Заполните поле",
-        email: "Введите корректный email в формате name@domain.com"
+      errorPlacement: function (error, element) {
+        if (element.attr("id") == "control-policy-checkbox") {
+          error.insertAfter(".control__policy-label");
+        }
+        else if (element.attr("id") == "footer-policy-checkbox") {
+          error.insertAfter(".footer__policy-label");
+        }
+        else if (element.attr("id") == "modal-policy-checkbox") {
+              error.insertAfter(".modal__policy-label");
+        } else {
+          error.insertAfter(element);
+        }  
       }
-    }
+
+    })  
   });
 
 
@@ -127,6 +141,6 @@ $( document ).ready(function() {
 
   // Маска для телефона
 
-  $('[type=tel]').mask('+7 (000) 000-00-00');
+  $('[type=tel]').mask('+7 (000) 000-00-00')
 
 });
