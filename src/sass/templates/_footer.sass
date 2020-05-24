@@ -24,6 +24,7 @@
     max-width: 37.142rem
     margin: auto
   &__input-group
+    position: relative
     display: flex
     flex-direction: column
     flex-basis: 45% 
@@ -31,13 +32,17 @@
     &--full-width
       flex-basis: 100% 
       margin-bottom: 2.1rem
+    div.invalid
+        top: 3.5rem
+        left: 0
   &__label
     margin-bottom: -2px  
   &__policy
     flex-basis: 100%
     margin-bottom: 3.6rem
-    .invalid
-      text-align: center
+    div.invalid
+      left: 50%
+      margin-left: -100px
   &__button
     margin: auto
     font-size: 1.07rem

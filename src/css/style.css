@@ -701,9 +701,13 @@ img {
   margin: auto; }
 
 .control__input-group {
+  position: relative;
   display: flex;
   flex-basis: 30%;
   flex-direction: column; }
+  .control__input-group div.invalid {
+    top: 3.5rem;
+    left: 0; }
 
 .control__label {
   margin-bottom: -2px; }
@@ -733,8 +737,9 @@ img {
   .control__policy-label {
     justify-content: center;
     font-size: 1.143rem; }
-  .control__policy .invalid {
-    text-align: center; }
+  .control__policy div.invalid {
+    left: 50%;
+    margin-left: -100px; }
 
 .video__play {
   position: relative;
@@ -843,6 +848,7 @@ img {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
@@ -850,13 +856,17 @@ img {
     .footer__input-group--full-width {
       flex-basis: 100%;
       margin-bottom: 2.1rem; }
+    .footer__input-group div.invalid {
+      top: 3.5rem;
+      left: 0; }
   .footer__label {
     margin-bottom: -2px; }
   .footer__policy {
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
-    .footer__policy .invalid {
-      text-align: center; }
+    .footer__policy div.invalid {
+      left: 50%;
+      margin-left: -100px; }
   .footer__button {
     margin: auto;
     font-size: 1.07rem;
@@ -950,17 +960,23 @@ img {
     padding: 1.357rem 3.214rem;
     border-radius: 0; }
   .modal__input-group {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 3.428rem; }
     .modal__input-group--last {
       margin-bottom: 0; }
+    .modal__input-group div.invalid {
+      top: 3.5rem;
+      left: 0; }
 
 .input {
   background-color: transparent;
   border: none;
   font-size: 1.285rem;
-  padding: 0.29rem 0 0.5rem 0; }
+  padding: 0.29rem 0 0.5rem 0;
+  width: 100%; }
   .input--light {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
@@ -1017,7 +1033,9 @@ img {
   .policy__label--center {
     justify-content: center; }
 
-.invalid {
+div.invalid {
+  position: absolute;
+  display: inline;
   color: tomato; }
 
 input.invalid {
@@ -1172,12 +1190,18 @@ input.invalid {
         margin-bottom: 1.25rem; }
     .control__form {
       flex-direction: column; }
+    .control__input-group {
+      margin-bottom: 5.1rem; }
+      .control__input-group div.invalid {
+        top: 4.5rem;
+        left: 0; }
     .control__label {
+      font-size: 1.25rem;
       color: rgba(255, 255, 255, 0.5);
       margin-bottom: 2px; }
     .control__input {
       font-size: 1.5rem;
-      margin-bottom: 5.1rem; }
+      color: #ffffff; }
       .control__input::-webkit-input-placeholder {
         color: #ffffff; }
       .control__input::-moz-placeholder {
@@ -1194,6 +1218,9 @@ input.invalid {
       .control__policy-label {
         justify-content: flex-start;
         font-size: 1.33rem; }
+      .control__policy div.invalid {
+        left: 12%;
+        margin-left: 0; }
     .control__button {
       order: 5;
       padding: 1.38rem 4.2rem;
@@ -1250,15 +1277,27 @@ input.invalid {
       margin-bottom: 5.2rem; }
       .footer__input-group--full-width {
         margin-bottom: 0.6rem; }
+      .footer__input-group div.invalid {
+        top: 4.5rem;
+        left: 0; }
     .footer__label {
       font-size: 1.25rem; }
     .footer__input {
       font-size: 1.5rem; }
     .footer__policy {
+      font-size: 1.5rem;
       margin-bottom: 5.6rem; }
+      .footer__policy label {
+        font-size: 1.33rem; }
+      .footer__policy div.invalid {
+        font-size: 1rem;
+        left: 12%;
+        margin-left: 0; }
     .footer__button {
       width: 100%;
-      padding: 1.3rem 4.2rem;
+      padding: 1.38rem 4.2rem;
+      font-size: 1.25rem;
+      border-radius: 0;
       box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
       margin-bottom: 0.5rem; }
     .footer__contacts {
@@ -1279,6 +1318,10 @@ input.invalid {
       display: none; }
   .policy__label--center {
     justify-content: flex-start; }
+  .modal__input-group {
+    margin-bottom: 2rem; }
+    .modal__input-group--last {
+      margin-bottom: 0; }
   .modal__title {
     width: 19.5rem; }
   .modal__dialog {
@@ -1288,7 +1331,9 @@ input.invalid {
     margin: auto; }
   .modal__close {
     width: 1.8rem;
-    height: 1.8rem; } }
+    height: 1.8rem; }
+  .modal__policy-label div.invaliddiv.invalid {
+    margin-bottom: 1rem; } }
 
 @media screen and (max-height: 640px) {
   .hero__scroll-down {

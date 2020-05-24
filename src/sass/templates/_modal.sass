@@ -52,16 +52,22 @@
     border-radius: 0
   &__input
     &-group
+      position: relative
+      width: 100%
       display: flex
       flex-direction: column
       margin-bottom: 3.428rem
       &--last
         margin-bottom: 0
+      div.invalid
+        top: 3.5rem
+        left: 0
 .input
   background-color: transparent
   border: none
   font-size: 1.285rem
   padding: 0.29rem 0 0.5rem 0
+  width: 100%
   &--light
     color: $light
     border-bottom: 1px solid rgba($light, 0.15)
@@ -101,8 +107,10 @@
       margin-right: 0.64rem
     &--center
       justify-content: center
-.invalid
-    color: tomato
+div.invalid
+  position: absolute
+  display: inline
+  color: tomato
 input
   &.invalid
     border-bottom: 1px solid tomato

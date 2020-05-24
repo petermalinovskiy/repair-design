@@ -186,12 +186,18 @@
         margin-bottom: 1.25rem
     &__form
       flex-direction: column
+    &__input-group  
+      margin-bottom: 5.1rem
+      div.invalid
+        top: 4.5rem
+        left: 0
     &__label
+      font-size: 1.25rem
       color: rgba($light, 0.5)
       margin-bottom: 2px
     &__input
-      font-size: 1.5rem
-      margin-bottom: 5.1rem
+      font-size: 1.5rem 
+      color: $light     
       &::placeholder
         color: $light
     &__policy
@@ -200,6 +206,9 @@
       &-label 
         justify-content: flex-start
         font-size: 1.33rem
+      div.invalid
+        left: 12%
+        margin-left: 0
     &__button
       order: 5
       padding: 1.38rem 4.2rem
@@ -262,19 +271,31 @@
       font-size: 1.67rem
       margin-bottom: 4.35rem
     &__input-group  
-       flex-basis: 100% 
-       margin-bottom: 5.2rem
-       &--full-width
+      flex-basis: 100% 
+      margin-bottom: 5.2rem
+      &--full-width
         margin-bottom: 0.6rem
+      div.invalid
+        top: 4.5rem
+        left: 0  
     &__label
       font-size: 1.25rem
     &__input
       font-size: 1.5rem
     &__policy
+      font-size: 1.5rem
       margin-bottom: 5.6rem
+      label
+        font-size: 1.33rem
+      div.invalid
+        font-size: 1rem
+        left: 12%
+        margin-left: 0
     &__button
       width: 100%
-      padding: 1.3rem 4.2rem
+      padding: 1.38rem 4.2rem
+      font-size: 1.25rem
+      border-radius: 0
       box-shadow: 0px 10px 20px rgba($primary, 0.1)
       margin-bottom: 0.5rem
     &__contacts
@@ -300,6 +321,11 @@
         justify-content: flex-start
 
   .modal
+    &__input
+      &-group
+        margin-bottom: 2rem
+        &--last
+          margin-bottom: 0
     &__title
       width: 19.5rem
     &__dialog
@@ -310,7 +336,9 @@
     &__close
       width: 1.8rem
       height: 1.8rem    
-      
+    &__policy-label
+      div.invaliddiv.invalid
+        margin-bottom: 1rem
 
 
 @media screen and ( max-height: 640px )    
