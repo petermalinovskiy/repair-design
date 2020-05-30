@@ -11,7 +11,7 @@ $(document).ready(function () {
       modal.toggleClass('modal--visible');
   })
   closeBtn.on('click', function () {
-      modal.toggleClass('modal-success--visible');
+      modal.toggleClass('modal--visible');
 
   })
   closeSuccess.on('click', function () {
