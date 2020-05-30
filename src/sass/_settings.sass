@@ -25,7 +25,7 @@ img
     &--left
       text-align: left
     &__heading
-      margin: 0 0 1.5rem 0
+      margin: 0 0 1.3rem 0
       font-family: 'Yeseva One', cursive
       font-weight: normal
       text-transform: uppercase    
@@ -38,6 +38,8 @@ img
         color: $primary
         font-size: 1.929rem
         font-weight: normal
+      &--dark
+        margin-bottom: 1.07rem
     &__word
       display: flex
       align-items: center
@@ -46,7 +48,7 @@ img
         width: 92px
         height: 1px
         background-color: $primary
-        margin-left: 1.6rem
+        margin-left: 2.4rem
     &__text
       font-style: normal
       font-size: 1.28rem
@@ -70,7 +72,21 @@ img
     font-size: 1.428rem
     line-height: 1.929rem
     color: $darker
-
-// временный элемент. Удалить после верстки секции Наши клиенты или Наша команда    
-.white-block 
-  height: 50rem
+  
+.white
+  position: relative
+  z-index: -2
+  height: 30rem
+  &::after
+    position: absolute
+    content: ""
+    width: 100%
+    height: 100%
+    background-image: url("../img/clients-right.svg"), url("../img/clients-left.svg")
+    background-position: left bottom, right bottom
+    background-size: 50%, 50%
+    background-repeat: no-repeat
+    bottom: 0
+    opacity: 0.8
+    pointer-events: none
+    z-index: -1

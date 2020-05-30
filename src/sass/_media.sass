@@ -8,6 +8,7 @@
     &-slide
       &__text
         flex-basis: 40%
+  
 @media screen and ( min-width: 992px )
   .logo
     &:hover
@@ -45,6 +46,25 @@
     &__button
       &:hover
         box-shadow: 0px 12px 22px rgba($light, 0.4)
+    &__phone
+      &:hover
+        color: $light    
+    &__mail-icon
+      &:hover
+        box-shadow: 0px 12px 15px rgba($light, 0.4)
+    &__inst-icon
+      &:hover
+        box-shadow: 0px 12px 15px rgba($light, 0.4)  
+  .scroll-up
+    &:hover
+      background: $dark url("../img/arrow-up.svg") no-repeat center
+      box-shadow: 0 5px 15px rgba($primary, 0.7)
+      text-decoration: none  
+  .video__play
+    &:hover
+        box-shadow: 0px 12px 15px rgba($light, 0.4) 
+
+  
 
         
 
@@ -72,12 +92,17 @@
       margin-left: 0
   .projects
     padding-top: 3rem
+    padding-bottom: 23.5rem
   .row--projects
     flex-direction: column
     align-items: center
+  .control
+    padding-bottom: 0
+  .types
+    padding-top: 57px
 
   .col-45, .col-55
-    width: 100%
+    width: 70%
   .design
     background: $dark
     &__section-subtitle
@@ -106,17 +131,18 @@
     &-title
       font-size: 1.16rem
       line-height: 158.48%
-      &__word
-        &::after
-          display: none
       &__heading
+        &--light 
+          margin-bottom: 0.9rem
         &--primary    
           margin-bottom: 1.8rem
+      &__word
+        &::after
+          display: none          
+
   .footer
-      &__map
-        max-width: 90%
-
-
+      .map
+        width: 100%
 
 
 @media screen and ( max-width: 576px )
@@ -168,14 +194,16 @@
   #section-title__heading--primary
     letter-spacing: -0.095em
 
+  .col-45, .col-55
+    width: 100%
   .control    
     margin-top: -2px
-    background: linear-gradient(to top, $light 14%, $dark 14%)
+    background: linear-gradient(to top, $light 5%, $dark 5%)
     color: $light
     &__section-title
       margin-bottom: 3.214rem
     &__video
-      min-height: 17.5rem
+      height: 17.5rem
       margin-bottom: 1.9rem
     &__text
       max-width: 28rem
@@ -197,17 +225,24 @@
       margin-bottom: 2px
     &__input
       font-size: 1.5rem 
-      color: $light     
+      color: $light
+      border-bottom: 1px solid $light     
       &::placeholder
         color: $light
+      &::-moz-placeholder, &:-moz-placeholder
+        opacity: 1
+        color: $light   
     &__policy
+      position: relative
       margin-top: -4.2rem
       margin-bottom: 5.1rem
       &-label 
         justify-content: flex-start
         font-size: 1.33rem
       div.invalid
-        left: 12%
+        position: absolute
+        transform: none
+        left: 25px
         margin-left: 0
     &__button
       order: 5
@@ -216,8 +251,8 @@
       border-radius: 0
   .video
     &__play
-      width: 11%
-      height: 11%
+      width: 37px
+      height: 37px
 
 
   .types
@@ -228,11 +263,15 @@
   .swiper
     &-slide
       &__text
+        font-size: 1.16rem
         flex-basis: 50%
         margin-bottom: 1rem 
       &__heading
+        font-size: 1.16rem
+        line-height: 135.84%
         margin-bottom: 0.75rem
       &__value
+        font-size: 1.16rem
         line-height: 1.6rem 
     &-wrapper--photo
       padding-top: 1.8rem
@@ -261,6 +300,8 @@
       max-width: 25.5rem
       margin: 1.7rem auto 3.25rem
 
+  .section.white
+    display: none
   .footer
     background: $dark  
     &__wrap
@@ -282,14 +323,20 @@
       font-size: 1.25rem
     &__input
       font-size: 1.5rem
+      &--light
+      color: $light
+      border-bottom: 1px solid $light
     &__policy
+      position: relative
       font-size: 1.5rem
       margin-bottom: 5.6rem
       label
         font-size: 1.33rem
       div.invalid
+        position: absolute
+        transform: none
         font-size: 1rem
-        left: 12%
+        left: 25px
         margin-left: 0
     &__button
       width: 100%
@@ -303,7 +350,7 @@
       img
         min-width: 3.5rem
         min-height: 3.5rem
-    &__adress
+    &__address
       &-text 
         font-size: 1.5rem
         line-height: 145%
@@ -326,18 +373,18 @@
         margin-bottom: 2rem
         &--last
           margin-bottom: 0
+    &__button
+      margin: auto
     &__title
       width: 19.5rem
     &__dialog
       padding-left: 2rem
       padding-right: 2rem
-    &__button
-      margin: auto
     &__close
       width: 1.8rem
       height: 1.8rem    
     &__policy-label
-      div.invaliddiv.invalid
+      div.invalid 
         margin-bottom: 1rem
 
 
@@ -351,17 +398,18 @@
 @media screen and ( max-height: 576px )  
   .modal
     &__dialog
-      padding-top: 0.9rem
-      padding-bottom: 0.9rem
+      padding-top: 0.5rem
+      padding-bottom: 0.5rem
     &__close
       width: 1.8rem
       height: 1.8rem
     &__title
       margin-bottom: 1rem
-    &__input
-      margin-bottom: 1rem
+    &__input-group
+      margin-bottom: 2rem
+      &--last
+        margin-bottom: 0
     &__button
-      margin: auto
-      padding: 1rem 2.8rem
+      padding: 0.5rem 2.8rem
     &__policy
-      margin-bottom: 1rem
+      margin-bottom: 1.5rem

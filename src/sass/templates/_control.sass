@@ -8,9 +8,10 @@
     margin: auto
     margin-bottom: 4.428rem
     max-width: 58.357rem
-    min-height: 31rem
-    background: $dark url('../img/video-mask.jpg') center no-repeat
+    height: 31rem
+    background: $dark url('../img/video-mask.jpg') center / cover no-repeat
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+    overflow: hidden
     &::before
       content: ('')
       position: absolute
@@ -56,16 +57,22 @@
     font-size: 1.07rem
     padding: 1.1rem 4.2rem
   &__policy
+    position: relative
     flex-basis: 100%
     margin-top: 1.2rem
     &-label 
       justify-content: center
       font-size: 1.143rem
     div.invalid
+      position: absolute
       left: 50%
-      margin-left: -100px
+      transform: translateX(-50%)
 
 .video
   &__play
     position: relative
+    width: 6.07rem
+    height: 6.07rem
     margin: auto
+    border-radius: 50%
+    cursor: pointer

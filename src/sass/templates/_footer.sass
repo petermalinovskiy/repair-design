@@ -1,8 +1,11 @@
 .footer
+  position: relative  
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
   padding-top: 3rem
+  margin-top: -2px
+
   &__wrap
-    background-color: $black
+    background: $black url('../img/bg-lines-footer.svg') no-repeat center
     max-width: 63.07rem
     margin: auto
     margin-top: -19rem    
@@ -23,6 +26,7 @@
     justify-content: space-between
     max-width: 37.142rem
     margin: auto
+    z-index: 1
   &__input-group
     position: relative
     display: flex
@@ -33,16 +37,18 @@
       flex-basis: 100% 
       margin-bottom: 2.1rem
     div.invalid
-        top: 3.5rem
-        left: 0
+      top: 3.5rem
+      left: 0
   &__label
     margin-bottom: -2px  
   &__policy
+    position: relative
     flex-basis: 100%
     margin-bottom: 3.6rem
     div.invalid
+      position: absolute
       left: 50%
-      margin-left: -100px
+      transform: translateX(-50%)
   &__button
     margin: auto
     font-size: 1.07rem
@@ -59,9 +65,11 @@
   &__map
     max-width: 66.07rem
     margin-bottom: 4.64rem
-  &__contacts
+    filter: grayscale(100%)
+  &__phone
+    text-decoration: none
 
-  &__adress
+  &__address
     &-text 
       font-family: 'Yeseva One', cursive
       font-style: normal
@@ -80,12 +88,15 @@
     margin-bottom: 3.07rem
   &__mail-icon
     margin-right: 1.07rem 
+    border-radius: 50%
+  &__inst-icon
+    border-radius: 50%
   &__map
     margin: auto
     width: 66.07rem
     height: 33.214rem
     margin-bottom: 4.714rem
-  
+    border: 0
   
 
   

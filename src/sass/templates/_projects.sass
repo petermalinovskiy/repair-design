@@ -5,14 +5,14 @@
   letter-spacing: -0.07em
 .projects
   padding-top: 9.12rem
-  padding-bottom: 30rem
+  padding-bottom: 26.8rem
 .row
   &--projects
     justify-content: space-between
 .swiper    
   &-wrapper--photo
     img
-      width: 47.857rem
+      width: 100%
       height: 34.428rem
       object-fit: cover
   &-wrapper
@@ -24,6 +24,7 @@
     margin-bottom: 0.5rem
     &__text
       flex-basis: 34%
+      min-width: 84px
       margin-bottom: 1.25rem  
     &__heading
       font-size: 1.285rem
@@ -35,14 +36,19 @@
       margin-bottom: 0.5rem
     &__value
       font-size: 1.07rem
+      min-height: 33px
       line-height: 1.43rem
  
 
   &-pagination
     &-bullets
       width: auto
+      
     &-bullet
       background: $light
+      width: 9px
+      height: 9px
+      margin: 2px
       &-active
         background: $light
   &-button
@@ -62,3 +68,5 @@
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: 0
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0 8px
